@@ -47,16 +47,16 @@
           
           <nav class="slider__nav js-slider__nav">
               <div class="slider-bullet js-slider-bullet">
-              <span class="slider-bullet__text js-slider-bullet__text">01</span>
               <span class="slider-bullet__line js-slider-bullet__line"></span>
+              <span class="slider-bullet__text js-slider-bullet__text">Home</span>
               </div>
               <div class="slider-bullet js-slider-bullet">
-              <span class="slider-bullet__text js-slider-bullet__text">02</span>
               <span class="slider-bullet__line js-slider-bullet__line"></span>
+              <span class="slider-bullet__text js-slider-bullet__text">Sobre nosotros</span>
               </div>
               <div class="slider-bullet js-slider-bullet">
+              <span class="slider-bullet__line js-slider-bullet__line"></span>
               <span class="slider-bullet__text js-slider-bullet__text">03</span>
-              <span class="slider-bullet__line js-slider-bullet__line"></span>
               </div>
           </nav>
           
@@ -95,6 +95,7 @@ export default {
   background-color: #111;
   font-family: 'helvetica neue', helvetica, sans-serif;
   overflow: hidden;
+  max-width: 100vw;
 }
 
 a{
@@ -235,6 +236,10 @@ ul, li{
   top: 0;
   right: 0;
   bottom: 0;
+  background-color: #11111156;
+  padding: 1em;
+  border-radius: 9px 0px 0px 9px;
+  font-family: 'Mona Sans Bold Wide';
   
   &__text{
     position: absolute;
@@ -267,23 +272,31 @@ ul, li{
     right: 0;
     transform: translateY(-50%);
     z-index: 10;
+    background-color: #11111156;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 9px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 1em 1em rgba(17, 17, 17, 0.34);
   }
   
   &-bullet{
     display: flex;
     align-items: center;
     padding: 1rem 0;
+    flex-direction: row-reverse;
     
     &__text{
-      color: #fff;
-      font-size: 0.65rem;
+      color: gold;
+      font-size: 1.25rem;
       margin-right: 1rem;
     }
     
     &__line{
-      background-color: #fff;
+      background-color: gold;
       height: 1px;
-      width: 1rem;
+      width: 2rem;
     }
   }
   
