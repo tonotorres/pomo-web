@@ -1,0 +1,73 @@
+{
+    "introduccion_titulo": "¡Hola, soy Toni!",
+    "introduccion_subtitulo": "Software Engineer & Fronted Developer",
+    "introduccion_texto": "Apasionado por crear experiencias web interactivas y visualmente atractivas. ",
+    "introduccion_texto_2": "¡Explora mi portfolio para ver ejemplos de mi trabajo!",
+    "introduccion_cv": "Descargar mi CV",
+    "introduccion_linkedin": "LinkedIn",
+    "introduccion_github": "GitHub",
+
+    "experiencia_titulo": "Experiencia laboral",
+    "ver_proyecto": "Ver proyecto",
+    "experiencia_amura_titulo": "Amura IT",
+    "experiencia_amura_fecha": "Octubre 2021 - Junio 2022",
+    "experiencia_amura_subtitulo": "Me dediqué principalmente a desarrollar software interno para Roche, supuso un desafío para mi ya que no había tocado nunca la parte de backend.",
+    "experiencia_amura_textos_1": "Datamining de la base de datos de Roche para posteriormente crear una web con Vue 2 que muestra gráficos de los resultados extraídos, esto ayudó a tener una visión mas amplia acerca de los envíos y fabricación de medicamentos según la época del año.", 
+    "experiencia_amura_textos_2": "Maquetación Pixel Perfect de el apartado Historias para la web de Roche desarrollada con React.",
+    "experiencia_amura_textos_3": "Creación de API’s que conectan la BBDD de Roche a su web interna.",
+    "experiencia_amura_logos": [],
+
+    "experiencia_satec_titulo": "Satec",
+    "experiencia_satec_fecha": "Junio 2022 - Mayo 2023",
+    "experiencia_satec_subtitulo": "Me empecé a especializar como frontend desarrollando webs desde cero con Vue 3 o añadiendo nuevos apartados a webs ya desplegadas.",
+    "experiencia_satec_textos_1": "Trabajabamos con metodologia SCRUM, donde cada semana definiamos los sprints semanales y los apuntabamos en Jira, usando Git subiamos a Dev las incidencias/tareas asignadas en Jira, una vez comprobadas se hacia una Pull request a Pre y los jueves se pasaban todas las Pull request a producción. Todas las pull requests las haciamos con Cherry picks.", 
+    "experiencia_satec_textos_2": "Desarrollé apartados de la web de Insurama para clientes con Vue 2.",
+    "experiencia_satec_textos_3": "También realicé la web de Palacio de hierro con Vue 3 y Nuxt.",
+    "experiencia_satec_textos_4": "Remodelé la web informativa de Insurama con Wordpress y CSS",
+    "experiencia_satec_logos": [],
+
+    "experiencia_netlu_titulo": "Netlu Solucions",
+    "experiencia_netlu_fecha": "Enero 2019 - Junio 2021",
+    "experiencia_netlu_subtitulo": "Fué mi primera empresa, empecé la practicas y luego me contrataron, desarrollamos desde cero una web de comunicación interna para los trabajadores de Salvador Escoda al estilo Jira.",
+    "experiencia_netlu_textos_1": "La web fué desarrollada con Vue 2, también usábamos Vuex y Vue-router, me encargaba de estilar la web y desarrollar su lógica. ", 
+    "experiencia_netlu_textos_2": "Cree un chat en tiempo real usando web sockets, en concreto usé la libreria Socket.io.",
+    "experiencia_netlu_logos": [],
+
+    "experiencia_jl_titulo": "JL Sound",
+    "experiencia_jl_fecha": "Abril 2023 - Junio 2023",
+    "experiencia_jl_subtitulo": "Web desarrollada para Joel Lozano, un productor musical que trabaja para artistas como Cariño, Delaporte, Ana Guerra y Blas Cantó entre otros. Una oportunidad para diseñar y desarrollar una web con mis frameworks favoritos.",
+    "experiencia_jl_textos_1": "La web fué diseñada con Figma, tenéis el enlace aquí.", 
+    "experiencia_jl_textos_2":"El cliente me dio amplia libertad para su diseño y desarrollo así que me pude permitir el lujo de trabajar con librerias como Particles.js, Three,js, GSAP y Nuxt.js.",
+    "experiencia_jl_logos": [],
+
+    "experiencia_legal_titulo": "LegalSpain",
+    "experiencia_legal_fecha": "Junio 2023 - Julio 2023",
+    "experiencia_legal_subtitulo": "Web desarrollada como FreeLancer para LegalSpain, desarrollada con Elementor (Wordpress).",
+    "experiencia_legal_textos_1": "Esta web es meramente informativa, también me encargue de optimizarla para mejorar su SEO, también encontré plugins para que los formularios se envíen a un apartado de correos de la empresa.",
+    "experiencia_legal_logos": [],
+
+    "experiencia_ias_titulo": "Portfolio IA's",
+    "experiencia_ias_fecha": "",
+    "experiencia_ias_subtitulo": "Actualmente me encuentro desarrollando mis portafolios, en este hablo sobre las inteligencias artificiales que domino ya sea para desarrollar webs como para edición de video o animación.",
+    "experiencia_ias_logos": [],
+
+    "conocimientos_titulo": "Conocimientos",
+    "conocimientos_vue": "Desde que comencé en el desarrollo frontend, he trabajado con Vue.js durante tres años, dos con Vue 2 y uno con Vue 3. Además, he trabajado con Vuex, una biblioteca de gestión de estado para Vue.js. Recientemente he comenzado a explorar Pinia, una solución de gestión de estado más simple y modular que Vuex. También he montado proyectos con Nuxt, un marco basado en Vue.js para crear aplicaciones web modernas. Aunque mi experiencia es sólida, siempre estoy buscando aprender y adaptarme a las nuevas tecnologías y prácticas en el mundo del desarrollo frontend.",
+    "conocimientos_figma": "Me encanta el diseño web, sé utilizar Figma, Photoshop, Illustrator y After Effects. Te dejo mi portfolio de diseños por aquí.",
+    "conocimientos_javascript": "Como desarrollador frontend especializado en JavaScript, he adquirido una sólida comprensión de la manipulación de arrays y funciones. Estos son dos de los conceptos fundamentales de JavaScript que son esenciales para cualquier tipo de desarrollo web. Mi experiencia en la creación de un juego de memorama es un testimonio de mi habilidad para aplicar estos conceptos de manera efectiva. En este juego, los arrays juegan un papel crucial en el seguimiento de las tarjetas seleccionadas por el jugador.",
+    "conocimientos_css": "De todos los lenguajes y frameworks mencionados anteriormente el css es mi favorito :P",
+    "conocimientos_bootstrap": "Como desarrollador web con buenos conocimientos de CSS, no considero a Bootstrap esencial, pero sí muy útil. Con tres años de experiencia en su uso, me ha facilitado la creación de interfaces de usuario atractivas y eficientes de manera rápida.",
+    "conocimientos_gsap": "Como se puede apreciar en mi trabajo, tengo un gran aprecio por GSAP, una de mis bibliotecas favoritas. GSAP, es una biblioteca de JavaScript que me permite crear animaciones de alta calidad y rendimiento para mis proyectos web. ",
+    "conocimientos_spline": "SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE SPLINE ",
+    "conocimientos_node": "Mi experiencia con Node.js se extiende durante los últimos dos años y medio, donde he utilizado este entorno de ejecución de JavaScript para desarrollar tanto en el lado del servidor como del cliente fuera del navegador web. He construido una API REST segura con Node.js, una de sus aplicaciones más comunes. Para facilitar la creación de servidores y la gestión de rutas, he utilizado Express.js, un marco de trabajo para Node.js. Uno de mis proyectos destacados es una aplicación web que permite a los usuarios buscar cervezas por nombre o tipo, desarrollada con Node.js y Express.js.",
+    "conocimientos_react": "Por ahora tengo poca experiencia en React y Next, aunque he estado estudiandolo por mi cuenta no he tenia la oportunidad de desarrollar ningun proyecto por completo.",
+
+    "proyecto_titulo": "¿Quieres ver como organizo mis proyectos?",
+
+    "formulario_titulo": "¿Necesitas una web tan chula como esta?",
+    "formulario_email": "Email",
+    "formulario_telefono": "Telefono (Opcional)",
+    "formulario_mensaje": "Mensaje",
+    "formulario_boton": "Enviar"
+
+}

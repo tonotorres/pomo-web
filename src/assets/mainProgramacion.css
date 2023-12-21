@@ -1,0 +1,209 @@
+/* Fuentes */
+
+@font-face {
+  font-family: "Mona Sans Regular";
+  src: url("../assets/fonts/Mona-Sans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mona Sans SemiBold";
+  src: url("../assets/fonts/Mona-Sans-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mona Sans Bold";
+  src: url("../assets/fonts/Mona-Sans-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mona Sans SemiBold Wide";
+  src: url("../assets/fonts/Mona-Sans-BoldWide.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mona Sans Bold Wide";
+  src: url("../assets/fonts/Mona-Sans-BoldWide.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mona Sans ExtraBold Wide";
+  src: url("../assets/fonts/Mona-Sans-ExtraBoldWide.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mona Sans Medium Wide";
+  src: url("../assets/fonts/Mona-Sans-MediumWide.ttf") format("truetype");
+  font-display: swap;
+}
+.font-regular {
+  font-family: "Mona Sans Regular";
+}
+
+.font-semibold {
+  font-family: "Mona Sans SemiBold";
+}
+.font-bold {
+  font-family: "Mona Sans Bold";
+}
+.font-bold-wide {
+  font-family: "Mona Sans Bold Wide";
+}
+/* Colores */
+
+.introduccion__flex-slide--gris {
+  background-color: #2C2546 !important;
+  border:1px solid #ddd;
+}
+.background_programacion_azul_oscuro {
+  background-color: #3284ff;
+}
+.background_programacion_azul_claro {
+  background-color: #6679fb;
+}
+.background_programacion_rosa_oscuro {
+  background-color: #a85ae7;
+}
+.background_programacion_rosa_claro {
+  background-color: #c244d6;
+}
+ .color-white {
+    color: white !important;
+ }
+/* Tipos de Texto  */
+
+  .introduccion__titulo--programacion {
+    font-family: "Mona Sans Bold Wide";
+    color: #FFFFFF;
+    font-size: 6vw;
+  }
+  .introduccion__subtitulo--programacion {
+    font-family: "Mona Sans SemiBold";
+    color: #FFFFFF;
+    font-size: 2.5vw;
+  }
+
+  .introduccion__texto--normal { 
+    font-family: "Mona Sans Regular";
+    color: #FFFFFF;
+    font-size: 1.8vw;
+    font-weight: 500;
+  }
+  .texto_formulario {
+    font-size: 2vw;
+    font-family: "Mona Sans SemiBold Wide";
+  }
+  .section_title_programacion {
+    color: #3284ff;
+    font-size: 7vw;
+    font-family: "Mona Sans Bold Wide";
+  }
+  .text-shadow-title_programacion {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #3284ff;
+  }
+  .section_subtitle_programacion {
+    color: #000000;
+    font-size: 2vw;
+    font-family: "Mona Sans SemiBold Wide";
+  }
+  .modal_main-text_programacion {
+    color: #000000;
+    font-size: 2vw;
+    font-family: "Mona Sans SemiBold";
+  }
+  .modal_introduccion__texto--normal_programacion {
+    color: #000000;
+    font-size: 2vw;
+    font-family: "Mona Sans Regular";
+  }
+  .conocimientos-text { 
+    font-family: "Mona Sans Regular";
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 2vw;
+    font-weight: 500;
+  }
+/* Imagenes */
+.conocimientos-image {
+  height: 100%;
+  width: 100;
+  /* aspect-ratio: 1 / 1; */
+}
+.figma-designs {
+  height: 30vh;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 17px;
+  border: 2px solid white;
+  background-size: 100%;
+  /* background-size: cover; */
+  transition: all 1.2s; 
+}
+
+.figma-designs:hover {
+  background-size: 140%; /* Zoom de 140% */
+}
+
+/* Tamaños */
+.seccion-conocimiento {
+  min-height: 50vh;
+}
+.separacion_secciones_programacion {
+  height: 20vh;
+}
+@media (max-width: 1500px) {
+  .introduccion__texto--normal { 
+    font-family: "Mona Sans Regular";
+    color: #FFFFFF;
+    /* text-align: left; */
+    font-size: 2vw;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 201px) and (max-width: 993px) {
+  .conocimientos-image {
+    aspect-ratio: 1 / 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .separacion_secciones_programacion {
+    height: 10vh;
+  }
+  .introduccion__titulo--programacion {
+    font-family: "Mona Sans Bold Wide";
+    color: #FFFFFF;
+    font-size: 10vw;
+  }
+  .introduccion__subtitulo--programacion {
+    font-family: "Mona Sans SemiBold";
+    color: #FFFFFF;
+    font-size: 4.5vw;
+  }
+  .texto_formulario {
+    font-size: 3vw;
+  }
+  .introduccion__texto--normal { 
+    font-family: "Mona Sans Regular";
+    color: #FFFFFF;
+    font-size: 3vw;
+    font-weight: 500;
+  }
+  .section_title_programacion {
+    font-size: 8vw;
+  }
+  .section_subtitle_programacion  {
+    font-size: 6vw;
+  }
+  .modal_main-text_programacion {
+    color: #000000;
+    font-size: 5.2vw;
+    font-family: "Mona Sans SemiBold";
+  }
+  .modal_introduccion__texto--normal_programacion {
+    color: #000000;
+    font-size: 4vw;
+    font-family: "Mona Sans Regular";
+  }
+}
+
+
+  

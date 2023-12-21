@@ -1,0 +1,43 @@
+{
+  "name": "Portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@splinetool/runtime": "^0.9.508",
+    "@studio-freight/lenis": "^1.0.27",
+    "bootstrap": "^5.3.2",
+    "bootstrap-vue-3": "^0.5.1",
+    "core-js": "^3.32.0",
+    "dotenv": "^16.3.1",
+    "ev-emitter": "^2.1.2",
+    "express": "^4.18.2",
+    "gsap": "^3.12.2",
+    "locomotive-scroll": "^4.1.4",
+    "mdb-ui-kit": "^6.4.2",
+    "nodemailer": "^6.9.7",
+    "split-type": "^0.3.3",
+    "three": "^0.158.0",
+    "vue": "^3.2.13",
+    "vue-i18n": "^9.6.2",
+    "vue-router": "^4.2.4",
+    "vue3-lazyload": "^0.3.8",
+    "webgl-fluid": "^0.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
+    "webpack-bundle-analyzer": "^4.9.0"
+  }
+}

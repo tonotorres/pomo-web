@@ -1,0 +1,28 @@
+<template>
+  <div id="app">
+    <router-view></router-view>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App',
+};
+</script>
+
+<style>
+html.lenis {
+  height: auto;
+  scroll-behavior: auto !important;
+  overflow-x: hidden;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  height: auto;
+  /* height: 300vh; */
+}
+</style>
