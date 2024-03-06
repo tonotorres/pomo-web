@@ -1,359 +1,193 @@
 <template>
-  <div id="secciones">
-      <div class="slider js-slider">
-          <div class="slider__inner js-slider__inner"></div>
-          
-          <div class="slide js-slide">
-              <div class="slide__content">
-                <!-- <figure class="slide__img js-slide__img">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo1.jpg">
-                </figure>
-                <figure class="slide__img js-slide__img">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg">
-                </figure>
-                </div>
-                
-                <div class="slider__text js-slider__text">
-                <div class="slider__text-line js-slider__text-line"><div>Black is</div></div>
-                <div class="slider__text-line js-slider__text-line"><div>timeless. Black is</div></div>
-                <div class="slider__text-line js-slider__text-line"><div>the colour of</div></div>
-                <div class="slider__text-line js-slider__text-line"><div>Eternity.</div></div> -->
-                <Secciones/>
-              </div>
-              
-          </div>
-          
-          <div class="slide js-slide">
-              <div class="slide__content">
-              <figure class="slide__img js-slide__img">
-                  <img src="../assets/images/pomo/1.jpg">
-              </figure>
-              <figure class="slide__img js-slide__img">
-                  <img src="../assets/images/pomo/2.jpg">
-              </figure>
-              </div>
-          </div>
-          
-          <div class="slide js-slide">
-              <div class="slide__content">
-              <figure class="slide__img js-slide__img">
-                  <img src="../assets/images/pomo/3.jpg">
-              </figure>
-              <figure class="slide__img js-slide__img">
-                  <img src="../assets/images/pomo/4.jpg">
-              </figure>
-              </div>
-          </div>
-          
-          <nav class="slider__nav js-slider__nav">
-              <div class="slider-bullet js-slider-bullet">
-              <span class="slider-bullet__line js-slider-bullet__line"></span>
-              <span class="slider-bullet__text js-slider-bullet__text">Home</span>
-              </div>
-              <div class="slider-bullet js-slider-bullet">
-              <span class="slider-bullet__line js-slider-bullet__line"></span>
-              <span class="slider-bullet__text js-slider-bullet__text">Sobre nosotros</span>
-              </div>
-              <div class="slider-bullet js-slider-bullet">
-              <span class="slider-bullet__line js-slider-bullet__line"></span>
-              <span class="slider-bullet__text js-slider-bullet__text">03</span>
-              </div>
-          </nav>
-          
-          <div class="scroll js-scroll">Scroll</div>
-          
+  <main class="provisional-background">
+    <div class="logo"></div>
+    <div class="texto"><h1>Coming soon</h1></div>
+    <div class="hero">
+      <div class="blob-cont">
+        <div class="yellow blob"></div>
+        <div class="red blob"></div>
+        <div class="green blob"></div>
       </div>
-
-  </div>
+    </div>
+    <svg>
+      <filter id='noiseFilter'>
+        <feTurbulence 
+          type='fractalNoise' 
+          baseFrequency='1.6' 
+          stitchTiles='stitch'/>
+        <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+            <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+            <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+      </filter>
+    </svg>
+  </main>
 </template>
-<script>
-import { Slider } from '../assets/utils/slider.js'
-import { onMounted } from 'vue';
-import Secciones from './Secciones.vue';
+<script setup>
+import { onMounted, ref } from 'vue';
 
-export default {
-    components: {
-      Secciones
-    },
-    setup() {
+const pomo = ref(null)
 
-      onMounted(() => {
-    
-        // Init classes
-        const slider = new Slider()
-
-      });
-    },
-};
 </script>
 
 <style scoped lang="scss">
-#secciones{
+body {
+  background-color: #151515;
+}
+.logo {
+  height: 60vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.texto {
+  height: 40vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white
+}
+.texto h1 {
+  font-size: 5.5rem !important;
+}
+.provisional-background {
+  height: 100vh;
+  width: 100vw;
+}
+.provisional-background {
+  height: 100vh;
+  margin: 0;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  gap: 3em;
+  background-color: rgb(20, 20, 20);
+  font-family: "Cardo";
+}
+.provisional-background::before,
+.provisional-background::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 30%;
+}
+
+.provisional-background::before {
+  background: rgb(29, 29, 29);
+  filter: url(#noiseFilter);
+}
+
+
+/* Blobs */
+.blob-cont {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: #111;
-  font-family: 'helvetica neue', helvetica, sans-serif;
-  overflow: hidden;
-  max-width: 100vw;
-}
-
-a{
-  color: #fff;
-  text-decoration: none;
-}
-
-.scroll{
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgba(#fff, 0.5);
-  font-family: 'font-2';
-  font-size: calc(0.5rem + 0.35vw);
-  z-index: 10;
-}
-
-.logo{
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0;
-  margin: 0;
-  z-index: 10;
-  
-  img{
-    display: block;
-    height: 1rem;
-    width: auto;
-  }
-}
-
-ul, li{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav{
-  position: absolute;
-  top: 2rem;
-  z-index: 10;
-  
-  &--left{
-    left: 1rem;
-  }
-  
-  &--right{
-    right: 1rem;
-  }
-  
-  ul{
-    display: flex;
-    align-items: center;
-    height: 1rem;
-  }
-  
-  li{
-    display: block;
-    margin: 0 1rem;
-    padding: 0;
-  }
-  
-  a{
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-size: calc(0.5rem + 0.35vw);
-    font-family: 'helvetica neue', helvetica, sans-serif;
-    
-    span{
-      position: relative;
-      
-      &:before{
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -0.35rem;
-        width: 100%;
-        height: 1px;
-        background-color: rgba(#fff, 0.25);
-        transition: transform .75s ease;
-        transform-origin: right;
-        transform: scaleX(0);
-      }
-    }
-    
-    &:hover,
-    &.is-active {
-
-      span{
-        
-        &:before{
-          transform: scaleX(1);
-          transform-origin: left;
-        }
-      }
-    }
-  }
-}
-
-.vert-text{
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  width: 15rem;
-  display: flex;
   align-items: center;
-  z-index: 10;
-  
-  span{
-    display: block;
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 1.1;
-    transform: rotate(-90deg) translateY(15rem);
-    transform-origin: bottom left;
-    font-size: 1.35rem;
-  }
+  z-index: 0;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  right: 5em;
 }
 
-.cart-total{
-  display: block;
-  height: 2rem;
-  width: 2rem;
-  background-color: rgba(#fff, 0.25);
-  border-radius: 50%;
-  text-align: center;
-  line-height: 2rem;
-  margin-left: 1rem;
+
+.blob {
+  border-radius: 100px;
+  filter: blur(60px);
 }
 
-.slider{
+.yellow {
+  background-color: #EDB74D;
   position: absolute;
-  left: 0;
-  top: 0;
+  top: 200px;
+  left: 100px;
+  height: 100px;
+  width: 100px;
+  
+  animation: yellow 8s infinite ease;
+}
+
+.green {
+  background-color: rgb(214, 238, 224);
+  position: absolute;
+  top: 80px;
+  right: -20px;
+  height: 100px;
+  width: 120px;
+  
+  animation: green 8s infinite ease;
+}
+
+.red {
+  background-color: rgb(236, 236, 236);
+  position: absolute;
   right: 0;
-  bottom: 0;
-  background-color: #11111156;
-  padding: 1em;
-  border-radius: 9px 0px 0px 9px;
-  font-family: 'Mona Sans Bold Wide';
+  top: 300px;
+  height: 125px;
+  width: 100px;
   
-  &__text{
-    position: absolute;
-    bottom: calc(2rem + 3vw);
-    left: calc(2rem + 3vw);
-    z-index: 10;
-    font-size: calc(1rem + 4vw);
-    text-transform: uppercase;
-    transform-origin: top;
-    line-height: 1.075;
-    color: #fff;
-    font-weight: 500;
-    
-    &-line{
-      overflow: hidden;
-    }
-  }
-  
-  &__inner{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  &__nav{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: #11111156;
-    padding-left: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-radius: 9px;
-    backdrop-filter: blur(2px);
-    box-shadow: 0 0 1em 1em rgba(17, 17, 17, 0.34);
-  }
-  
-  &-bullet{
-    display: flex;
-    align-items: center;
-    padding: 1rem 0;
-    flex-direction: row-reverse;
-    
-    &__text{
-      color: gold;
-      font-size: 1.25rem;
-      margin-right: 1rem;
-    }
-    
-    &__line{
-      background-color: gold;
-      height: 1px;
-      width: 2rem;
-    }
-  }
-  
-  canvas{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+  animation: red 8s infinite linear;
+}
+
+@keyframes yellow {
+  0% {top: 200px; left: 100px; transform: scale(1);}
+  30% {top: 300px; left: 150px; transform: scale(1.2);}
+  60% {top: 100px; left: 200px; transform: scale(1.3);}
+  100% {top: 200px; left: 100px; transform: scale(1);}
+}
+
+@keyframes green {
+  0% {top: 80px; right: -20px; transform: scale(1.2);}
+  30% {top: 300px; right: -20px;transform: scale(1);}
+  60% {top: 200px; right: 100px;transform: scale(1);}
+  100% {top: 80px; right: -20px; transform: scale(1.2);}
+}
+
+@keyframes red {
+  0% {top: 250px; right: 0px; transform: scale(1);}
+  30% {top: 150px; right: 150px;transform: scale(1.4);}
+  60% {top: 250px; right: 100px;transform: scale(1);}
+  100% {top: 250px; right: 0px; transform: scale(1);}
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 130%;
+  gap: 3em;
+  background:
+        linear-gradient(to right, #151515 1px, transparent 1px) 0 0,
+        linear-gradient(to right, #151515 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, #151515 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, #151515 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, #151515 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, #151515 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, #151515 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, #151515 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+      
+}
+
+.primary {
+  background-color: var(--text);
+  color: #DED3B6;
+}
+
+@media only screen and (max-width: 1000px) {
+  .provisional-background {
+    margin: 1em;
   }
 }
 
-.slide{
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  
-  &__content{  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  &__img{
-    position: relative;
-    width: 25vw;
-    height: 70vh;
-    padding: 0;
-    margin: 0;
-    min-width: 12.5rem;
-    transform-origin: top;
-    
-    &:first-child{
-      top: -1.5rem;
-    }
-    
-    &:last-child{
-      bottom: -1.5rem;
-    }
-    
-    img{
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-}
 </style>
